@@ -1,9 +1,9 @@
 #include "header.h"
 
 void criarTriagens() {
-  pthread_t vTriagens[config->nTriagens];
+  pthread_t vTriagens[10/*config->nTriagens*/];
   int i;
-  int idsTriagens[config->nTriagens];
+  int idsTriagens[10/*config->nTriagens*/];
   Paciente * paciente;
 
   //cria o numero de triagens necessarias

@@ -17,7 +17,7 @@ void lerFichConfig(){
       config->nDoutores = 10;//atoi(numero);
     }
     else if (count == 2) {
-      config->tempoTurno = 5; //atoi(numero);
+      config->tempoTurno = 35; //atoi(numero);
     }
     else if (count == 3) {
       config->queueMax = 5; //atoi(numero);
