@@ -9,11 +9,8 @@ void criarTriagens() {
   //cria o numero de triagens necessarias
   for (i=0; i<10 /*config->nTriagens*/; i++) {
     idsTriagens[i] = i;
-    paciente = queuePacientes->info.next;
-    printf("Paciente que vai ser eliminado: %s\n", paciente->info.nome);
-    queuePacientes->info.next = (queuePacientes->info.next)->info.next;
 
-    pthread_create(&vTriagens[i], NULL, triagem, paciente);
+    pthread_create(&vTriagens[i], NULL, triagem, &idsTriagens[i]/*paciente*/);
 
     Paciente* aux = queuePacientes;
     printf("QueuePacientes depois de eliminar: \n");

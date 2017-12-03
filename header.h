@@ -76,6 +76,7 @@ int mqid;
 int fdpipe;
 //sem_t semAtend;
 //sem_init(&semAtend, 0, 1);
+FILE *fichLog;
 
 void lerFichConfig();
 Paciente* namedPipe();
